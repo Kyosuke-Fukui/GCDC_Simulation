@@ -1,0 +1,12 @@
+input {
+  width: 60px;
+  margin: 5px;
+}
+
+body {
+  font-size: 15px;
+}
+
+li {
+  margin: 2px auto;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="https://kyosuke-fukui.github.io/GCDC_Simulation/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://kyosuke-fukui.github.io/GCDC_Simulation/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: flex">
+      <div>
+        <div id="chart" style="width: 800px; height: 480px"></div>
+        <div style="height: 100px; display: flex; flex-direction: column; margin-left: 50px">
+          <div id="pl"></div>
+          <div style="margin-top:auto;">
+            <button id="button1">表示</button>
+            データ数<input id="datanum" type="number" value="1000"></input>
+            変動幅(%)<input id="rndrange" type="number" value="10"></input>
+            短期EMA<input id="p1" type="number" value="5"></input>
+            長期EMA<input id="p2" type="number" value="20"></input>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="myDiv" style="width: 600px; height: 480px"></div>
+        <div style="height: 100px; display: flex; flex-direction: column;">
+          <div id="simulation"></div>
+          <div style="margin-top:auto;">
+            <button id="button2">ﾓﾝﾃｶﾙﾛｼﾐｭﾚｰｼｮﾝ</button>
+            試行回数<input id="smlnum" type="number" value="100"></input>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://kyosuke-fukui.github.io/GCDC_Simulation/app.js"></script>
+
+  </body>
+</html>
